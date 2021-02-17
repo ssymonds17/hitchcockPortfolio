@@ -273,3 +273,33 @@ footer p {
   width: 100%;
   height: 100%;
 }
+
+@media only screen and (max-width: 700px) {
+  .projects {
+    display: block;
+    margin-top: 4rem;
+    height: 50rem;
+  }
+
+  #filmList {
+    width: 80%;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-around;
+  }
+  #filmItem {
+    padding: 1rem;
+  }
+  .posterContainer {
+    justify-content: center;
+    width: 80%;
+    margin: 2.5rem auto;
+  }
+
+  #poster {
+    height: 27.75rem;
+  }
+}
