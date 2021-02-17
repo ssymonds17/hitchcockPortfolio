@@ -17,12 +17,25 @@ const filmTitles = [
   'Marnie'
 ];
 
+const showPoster = (event) => {
+  const poster = document.getElementById('poster');
+  poster.innerHTML = '';
+  const posterImage = document.createElement('img');
+  posterImage.src = `./images/${event.target.classList}.jpg`;
+  posterImage.classList.add('posterImage');
+  poster.appendChild(posterImage);
+};
+
 const createFilmList = () => {
+  let count = 1;
   const filmList = document.getElementById('filmList');
   filmTitles.forEach((film) => {
     const filmItem = document.createElement('p');
     filmItem.innerHTML = film;
-    filmItem.classList.add('filmItem');
+    filmItem.id = 'filmItem';
+    filmItem.classList.add(`poster${count}`);
+    count += 1;
+    filmItem.addEventListener('click', showPoster);
     filmList.appendChild(filmItem);
   });
 };
