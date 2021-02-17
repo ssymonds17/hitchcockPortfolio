@@ -38,6 +38,12 @@ nav a:focus {
   text-decoration: underline;
 }
 
+@media only screen and (max-width: 550px) {
+  nav li {
+    padding: 1rem 1.5rem;
+  }
+}
+
 /* Banner Section */
 
 .banner {
@@ -66,4 +72,43 @@ nav a:focus {
 .bannerSubHeader h2 {
   text-transform: uppercase;
   padding-right: 0.5rem;
+}
+
+.bannerSubHeaderSmall {
+  display: none;
+}
+
+@media only screen and (max-width: 900px) {
+  .bannerHeader {
+    float: right;
+    padding: 5% 10% 0 0;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .bannerHeader {
+    text-align: right;
+  }
+  .bannerSubHeader {
+    display: none;
+  }
+  .bannerSubHeaderSmall {
+    display: block;
+    text-transform: uppercase;
+  }
+  .bannerSubHeaderSmall h2 {
+    padding: 1rem 0;
+  }
+}
+
+@media only screen and (max-width: 725px) {
+  .bannerHeader {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .bannerHeader {
+    padding: 5% 5% 0 0;
+  }
 }
