@@ -238,3 +238,33 @@ footer p {
   padding-bottom: 1rem;
   width: 6rem;
 }
+
+/* Projects Section */
+
+.projects {
+  height: 36.5rem;
+  display: flex;
+}
+
+#filmList {
+  padding: 2.5rem 0 2.5rem 10%;
+  line-height: 2rem;
+  width: 40%;
+}
+
+.filmItem:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.posterContainer {
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+
+#poster {
+  border: 3px solid black;
+  width: 25rem;
+  height: 75%;
+}
