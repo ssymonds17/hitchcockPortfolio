@@ -60,6 +60,18 @@ nav a:focus {
   }
 }
 
+/* Footer Section */
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: left;
+}
+
+footer p {
+  padding: 1.5rem;
+}
+
 /* Home Banner Section */
 
 .banner {
