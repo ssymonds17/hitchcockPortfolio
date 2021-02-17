@@ -180,6 +180,32 @@ footer p {
   margin-left: 15%;
 }
 
+.portraitWide {
+  display: none;
+}
+
+@media only screen and (max-width: 950px) {
+  .aboutMainContainer {
+    margin: 0;
+    display: block;
+  }
+  .portrait {
+    display: none;
+  }
+  .aboutHitch {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+  }
+  .portraitWide {
+    display: block;
+    width: 100%;
+  }
+  .portraitTwo {
+    width: 100%;
+  }
+}
+
 /* Skills */
 
 .skills {
@@ -194,17 +220,21 @@ footer p {
 }
 
 .skillsContainer {
+  margin: 0 auto;
+  width: 80%;
   display: flex;
   justify-content: space-around;
   padding-top: 2rem;
+  flex-wrap: wrap;
 }
 
 .skillItem {
   display: inline-block;
   text-transform: capitalize;
+  padding-bottom: 1rem;
 }
 
 .skillIcon {
   padding-bottom: 1rem;
-  width: 4rem;
+  width: 6rem;
 }
