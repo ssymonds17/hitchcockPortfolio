@@ -1,7 +1,12 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Raleway', sans-serif;
+}
+
+h2,
+a {
+  font-family: 'Lato', sans-serif !important;
 }
 
 /* Header Section */
@@ -44,7 +49,7 @@ nav a:focus {
   }
 }
 
-/* Banner Section */
+/* Home Banner Section */
 
 .banner {
   height: 90vh;
