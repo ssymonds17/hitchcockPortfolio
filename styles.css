@@ -17,7 +17,9 @@ header {
   margin: 0 auto;
   justify-content: center;
   height: 4rem;
-  border: 1px solid black;
+  border-bottom: 3px solid black;
+  background-color: black;
+  color: white;
 }
 
 nav ul {
@@ -31,7 +33,7 @@ nav li {
 }
 
 nav a {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
@@ -41,6 +43,15 @@ nav a:hover {
 }
 nav a:focus {
   text-decoration: underline;
+}
+
+.homeHeader {
+  background-color: white;
+  color: black;
+}
+
+.homeHeader a {
+  color: black;
 }
 
 @media only screen and (max-width: 550px) {
@@ -117,4 +128,71 @@ nav a:focus {
   .bannerHeader {
     padding: 5% 5% 0 0;
   }
+}
+
+/* About Main Content */
+
+.aboutMainContainer {
+  margin: 5rem;
+  display: flex;
+}
+
+.aboutHitch {
+  /* text-align: center; */
+  padding: 1rem;
+}
+
+.aboutHitch h2 {
+  text-decoration: underline;
+  padding-bottom: 1.5rem;
+}
+
+.aboutHitch p {
+  padding-top: 1rem;
+  line-height: 1.7rem;
+}
+
+.aboutHitch,
+.portrait {
+  width: 50%;
+}
+
+.solidHr {
+  border-top: 2px solid black;
+}
+
+.portraitOne {
+  width: 25rem;
+  max-width: 25rem;
+  border-radius: 0.95rem;
+  margin-left: 15%;
+}
+
+/* Skills */
+
+.skills {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.skills h2 {
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.skillsContainer {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 2rem;
+}
+
+.skillItem {
+  display: inline-block;
+  text-transform: capitalize;
+}
+
+.skillIcon {
+  padding-bottom: 1rem;
+  width: 4rem;
 }
