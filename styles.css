@@ -1,13 +1,18 @@
-html {
+* {
   margin: 0;
   padding: 0;
+  font-family: 'Lato', sans-serif;
 }
+
+/* Header Section */
 
 header {
   width: 100%;
   display: flex;
   margin: 0 auto;
   justify-content: center;
+  height: 4rem;
+  border: 1px solid black;
 }
 
 nav ul {
@@ -15,7 +20,50 @@ nav ul {
 }
 nav li {
   display: inline-block;
-  padding: 0 2rem;
+  padding: 1rem 2rem;
   text-transform: uppercase;
   font-size: 1.5rem;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+}
+
+nav a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+nav a:focus {
+  text-decoration: underline;
+}
+
+/* Banner Section */
+
+.banner {
+  height: 90vh;
+  background-image: url('./images/hitchcockWallpaper.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.bannerHeader {
+  float: right;
+  padding: 10% 20% 0 0;
+}
+
+.bannerHeader h1 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 5rem;
+}
+
+.bannerSubHeader {
+  display: flex;
+  justify-content: center;
+}
+
+.bannerSubHeader h2 {
+  text-transform: uppercase;
+  padding-right: 0.5rem;
 }
