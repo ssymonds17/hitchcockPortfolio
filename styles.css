@@ -242,7 +242,6 @@ footer p {
 /* Projects Section */
 
 .projects {
-  height: 36.5rem;
   display: flex;
 }
 
@@ -266,7 +265,14 @@ footer p {
 #poster {
   border: 3px solid black;
   width: 20rem;
-  height: 75%;
+  height: 29.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#poster h3 {
+  text-transform: capitalize;
 }
 
 .posterImage {
@@ -278,7 +284,7 @@ footer p {
   .projects {
     display: block;
     margin-top: 4rem;
-    height: 50rem;
+    height: auto;
   }
 
   #filmList {
@@ -295,11 +301,8 @@ footer p {
   }
   .posterContainer {
     justify-content: center;
+    height: 29.6rem;
     width: 80%;
-    margin: 2.5rem auto;
-  }
-
-  #poster {
-    height: 27.75rem;
+    margin: 2rem auto;
   }
 }
